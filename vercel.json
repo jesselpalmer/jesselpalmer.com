@@ -2,6 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "installCommand": "",
-  "buildCommand": "",
-  "outputDirectory": "public"
+  "buildCommand": "node --env-file=.env.production scripts/build.mjs",
+  "outputDirectory": "dist"
 }
