@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Jesse Palmer leads growth engineering at SurveyMonkey and writes about experimentation and AI.">
+    <meta name="description" content="Jesse Palmer builds AI applications and writes about what he learns.">
     <link rel="canonical" href="https://jesselpalmer.com/">
     <link rel="stylesheet" href="/styles.css">
     <title>Jesse Palmer</title>
@@ -12,66 +12,96 @@
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header page-width">
-      <a class="site-name" href="/">jesselpalmer.com</a>
+      <a class="site-name quiet" href="/">jesselpalmer.com</a>
       <nav aria-label="Main">
         <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#writing">Writing</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="quiet" href="#building">Building</a></li>
+          <li><a class="quiet" href="#writing">Writing</a></li>
+          <li><a class="quiet" href="#about">About</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="page-width" id="main" tabindex="-1">
       <div class="intro">
-        <h1>Jesse Palmer</h1>
-        <p>I lead growth engineering at SurveyMonkey.<br class="intro-break">
-          I write about experimentation and AI, and build software for the fun of it.</p>
+        <p class="label specialty">Applied AI</p>
+        <h1>Jesse <span>Palmer</span></h1>
+        <div class="split">
+          <p class="statement">I build AI applications and write about what I learn.</p>
+          <div class="currently">
+            <span class="label">Currently</span>
+            <p>I lead growth engineering at SurveyMonkey.</p>
+          </div>
+        </div>
       </div>
 
-      <section aria-labelledby="projects">
-        <h2 class="section-heading" id="projects">Selected projects</h2>
-        <div class="projects">
-          <article class="project">
-            <a class="project-image webpad-image" href="https://webpad.cc/">
-              <img src="/img/webpad.webp" width="976" height="480" alt="A weekend to-do list open in the Webpad editor">
+      <section class="section featured" id="building" aria-labelledby="hello-sparks">
+        <p class="label section-label"><span>Building</span> <span>Featured project</span></p>
+        <div class="featured-grid">
+          <div class="featured-head">
+            <h2 id="hello-sparks">Hello Sparks</h2>
+            <p class="tagline">Learn AI by building your own games.</p>
+          </div>
+          <div class="section-body featured-body">
+            <p>Hello Sparks helps kids explore AI through an interactive experience involving a robot, a language model, and tools.</p>
+            <div class="cta-row">
+              <a class="button" href="https://hellosparks.app/">Try Hello Sparks <span class="external-mark" aria-hidden="true"></span></a>
+              <span class="mono-note">hellosparks.app</span>
+            </div>
+          </div>
+          <figure class="featured-shot">
+            <a class="shot-link" href="https://hellosparks.app/" aria-label="Open Hello Sparks">
+              <picture>
+                <source media="(max-width: 40rem)" srcset="/img/hello-sparks-card.webp" width="1170" height="1632">
+                <img src="/img/hello-sparks-lesson.webp" width="2400" height="1440" alt="Hello Sparks: a purple robot beside its first lesson, which explains what a language model is.">
+              </picture>
             </a>
-            <h3><a href="https://webpad.cc/">Webpad</a></h3>
-            <p>A browser-based notepad for writing, organizing, and sharing notes.</p>
-            <a class="project-action" href="https://webpad.cc/">Open Webpad <span class="external-mark" aria-hidden="true"></span></a>
-          </article>
-          <article class="project">
-            <a class="project-image" href="https://helloloops.com/">
-              <img src="/img/hello-loops.webp" width="1402" height="625" alt="Pong running beside its BASIC source code in Hello Loops">
-            </a>
-            <h3><a href="https://helloloops.com/">Hello Loops</a></h3>
-            <p>I learned BASIC on an Atari 400. Now I make games in BASIC with my daughter.</p>
-            <a class="project-action" href="https://helloloops.com/">Try Hello Loops <span class="external-mark" aria-hidden="true"></span></a>
-          </article>
+            <figcaption class="mono-note">
+              <span class="caption-wide">Pictured: lesson 1 of 4, connecting the robot to a language model</span>
+              <span class="caption-wide">Four short lessons: Model · Tools · Build · Use it</span>
+              <span class="caption-narrow">Pictured: where Hello Sparks starts, on a phone</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="writing" aria-labelledby="writing">
-        <h2 class="section-heading" id="writing">Writing</h2>
-        <article>
-          <p class="essay-status">In progress</p>
-          <h3>Building Experiment Advisor</h3>
-          <p class="essay-description">How past experiment results can help a team decide what to test next.</p>
-          <a href="https://medium.com/@jesselpalmer">Earlier writing on Medium <span class="external-mark" aria-hidden="true"></span></a>
-        </article>
+      <section class="section" id="writing" aria-labelledby="writing-heading">
+        <p class="label section-label">Writing</p>
+        <div class="split">
+          <h2 id="writing-heading">On building AI applications</h2>
+          <div class="section-body">
+            <p>I write about the decisions I made, the problems I ran into, the approaches I tried, and the lessons from making things work.</p>
+            <a class="with-mark" href="https://medium.com/@jesselpalmer">Earlier writing on Medium <span class="external-mark" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <p class="label section-label">About</p>
+        <div class="split">
+          <h2 id="about-heading">I&rsquo;m an engineering leader who enjoys building useful software.</h2>
+          <div class="section-body">
+            <p>My focus is applied AI: using models, tools, and software to build useful applications, automate tasks and workflows, and make difficult things easier. That can mean agents, chatbots, educational experiences like Hello Sparks, and other systems. I like having room to explore.</p>
+            <p class="aside">I&rsquo;m also an author of <a href="https://manning.com/books/testing-angular-applications">Testing Angular Applications</a>, published by Manning.</p>
+            <div class="contact">
+              <span class="label" id="contact-heading">Follow along or say hello</span>
+              <ul aria-labelledby="contact-heading">
+                <li><a class="with-mark" href="https://github.com/jesselpalmer">GitHub <span class="external-mark" aria-hidden="true"></span></a></li>
+                <li><a class="with-mark" href="https://www.linkedin.com/in/jesselpalmer/">LinkedIn <span class="external-mark" aria-hidden="true"></span></a></li>
+                <li><a class="with-mark" href="https://x.com/jesselpalmer">X <span class="external-mark" aria-hidden="true"></span></a></li>
+                <li><a class="with-mark" href="mailto:jesselpalmer@gmail.com">Email</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="site-footer page-width" id="contact">
-      <nav aria-label="Contact and book">
-        <ul>
-          <li><a href="https://github.com/jesselpalmer">GitHub <span class="external-mark" aria-hidden="true"></span></a></li>
-          <li><a href="https://www.linkedin.com/in/jesselpalmer/">LinkedIn <span class="external-mark" aria-hidden="true"></span></a></li>
-          <li><a href="https://x.com/jesselpalmer">X <span class="external-mark" aria-hidden="true"></span></a></li>
-          <li><a href="mailto:jesselpalmer@gmail.com">Email <span class="external-mark" aria-hidden="true"></span></a></li>
-          <li class="book"><a href="https://manning.com/books/testing-angular-applications">Testing Angular Applications <span class="external-mark" aria-hidden="true"></span></a></li>
-        </ul>
-      </nav>
+    <footer class="site-footer page-width">
+      <a class="with-mark quiet" href="/other-projects/">Other projects
+        <svg class="arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+      </a>
+      <span class="mono-note">Jesse Palmer</span>
     </footer>
 
     <script>

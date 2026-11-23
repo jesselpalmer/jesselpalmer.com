@@ -1,4 +1,4 @@
-import { cp, readFile, rm, writeFile } from 'node:fs/promises';
+import { cp, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 
 const publicFiles = new URL('../public/', import.meta.url);
 const output = new URL('../dist/', import.meta.url);
@@ -14,8 +14,11 @@ if (projectToken && apiHost && !isPreview) {
   const config = JSON.stringify({ projectToken, apiHost });
   await writeFile(new URL('posthog.js', output), `const posthogConfig = ${config};\n${bootstrap}`);
 
-  const index = new URL('index.html', output);
-  const html = await readFile(index, 'utf8');
   const analyticsScript = '    <script src="/posthog.js" defer></script>\n';
-  await writeFile(index, html.replace('  </head>', analyticsScript + '  </head>'));
+  const entries = await readdir(output, { recursive: true });
+  for (const entry of entries.filter((name) => name.endsWith('.html'))) {
+    const page = new URL(entry, output);
+    const html = await readFile(page, 'utf8');
+    await writeFile(page, html.replace('  </head>', analyticsScript + '  </head>'));
+  }
 }
