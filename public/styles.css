@@ -443,6 +443,37 @@ a.button:hover {
   display: none;
 }
 
+/* About: learning and credentials (secondary to the paragraphs above) */
+
+.credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-self: stretch;
+  margin-top: 0.75rem;
+}
+
+.credentials h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.section-body .credentials p {
+  font-size: 1.0625rem;
+}
+
+.credentials li {
+  padding-block: 0.375rem;
+}
+
+.credentials a {
+  font-size: 1.0625rem;
+}
+
+.credentials .external-mark {
+  margin-left: 0.3em;
+}
+
 /* About: contact links */
 
 .contact {
@@ -658,6 +689,11 @@ a.button:hover {
     flex-direction: column;
     align-items: stretch;
     text-align: center;
+  }
+
+  .section-body .credentials p,
+  .credentials a {
+    font-size: 1rem;
   }
 
   .contact {
